@@ -1,0 +1,20 @@
+.container {
+    display: flex; /* Make the container a flexbox for vertical centering */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Set minimum height to viewport height */
+    background-color: #f0f0f0; /* Optional background color */
+  }
+  .box {
+    text-align: center; /* Center text within the box */
+    padding: 20px; /* Add some padding around the content */
+    border-radius: 5px; /* Add some rounded corners to the box */
+    margin-top: -50px;
+  }
+  .box img {
+    display: block; /* Make the image a block element for centering */
+    margin: 0 auto; /* Center the image horizontally within the box */
+    max-width: 100%; /* Allow image to shrink to fit container */
+    height: auto; /* Maintain image aspect ratio */
+  }
+  

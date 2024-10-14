@@ -1,0 +1,13 @@
+<mat-card class="card" *ngFor="let x of filteredlist" >
+  <a routerLink="{{x.id}}">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{x.pname}}</mat-card-title>
+      <mat-card-subtitle>{{x.pcategory}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{x.purl}}" alt="{{x.pname}}">
+    <mat-card-content><br>
+      <p>{{x.pdescription}}</p>
+    </mat-card-content>
+  </a>
+  </mat-card>

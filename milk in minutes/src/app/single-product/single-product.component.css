@@ -1,0 +1,28 @@
+.card {
+    max-width: 400px;
+    display: inline-flex;
+    margin-left:20%;;
+    margin-top: 30px;
+  }
+  
+.example-header-image {
+    background-size: cover;
+  }
+p{
+    font-size: larger;
+}
+.card-container {
+  display: flex;
+  width: 100%; 
+}
+.form{
+  margin-left: 300px;
+  margin-top: 40px;
+  border: solid 1px;
+  padding: 45px;
+}
+img{
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+}
