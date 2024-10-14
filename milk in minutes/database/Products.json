@@ -1,0 +1,115 @@
+{
+    "Products": [
+            {
+              "id": 1,
+              "pname": "Nestle Milk Powder",
+              "pdescription": "Rich and nutritious milk powder for everyday use. Perfect for baking, cooking, or as a beverage.",
+              "pcost": "60 rs",
+              "pcategory": "Milk Powder",
+              "purl": "../assets/nestle milk powder.jpeg",
+              "netWeight": "400g"
+            },
+            {
+              "id": 2,
+              "pname": "Milky Mist Fruit Yoghurt",
+              "pdescription": "Creamy and delicious yogurt with fruit chunks",
+              "pcost": "50 rs",
+              "pcategory": "Yoghurt",
+              "purl": "../assets/milky mist fruit yoghurt.jpeg",
+              "netWeight": "150g"
+            },
+            {
+              "id": 3,
+              "pname": "Epigamia Yogurt Strawberry",
+              "pdescription": "Creamy and delicious yogurt with real strawberry chunks",
+              "pcost": "80 rs",
+              "pcategory": "Yoghurt",
+              "purl": "../assets/epigamia yogurt strawberry.jpeg",
+              "netWeight": "100g" 
+            },
+            {
+              "id": 4,
+              "pname": "Amul Homogenised Milk",
+              "pdescription": "Rich and creamy milk for everyday consumption",
+              "pcost": "45 rs",
+              "pcategory": "Milk",
+              "purl": "../assets/amul homogenised milk.jpeg",
+              "netWeight": "1L" 
+            },
+            {
+              "id": 5,
+              "pname": "Amul Mozzarella Cheese",
+              "pdescription": "Shredded mozzarella cheese perfect for pizzas and pastas",
+              "pcost": "150 rs",
+              "pcategory": "Cheese",
+              "purl": "../assets/amul mozzerela cheese.jpeg",
+              "netWeight": "200g"
+            },
+            {
+              "id": 6,
+              "pname": "Amul Masti Buttermilk",
+              "pdescription": "Refreshing and tangy buttermilk, perfect for hot days",
+              "pcost": "30 rs",
+              "pcategory": "Beverages",
+              "purl": "../assets/amul masti buttermilk.jpeg",
+              "netWeight": "500ml" 
+            },
+            {
+              "id": 7,
+              "pname": "Amul Fresh Cream",
+              "pdescription": "Thick and creamy fresh cream for desserts and baking",
+              "pcost": "100 rs",
+              "pcategory": "Dairy Products",
+              "purl": "../assets/amul fresh cream.jpeg",
+              "netWeight": "200ml" 
+            },
+            {
+              "id": 8,
+              "pname": "Amul Cheese Slices",
+              "pdescription": "Convenient and tasty cheese slices for sandwiches and burgers",
+              "pcost": "70 rs",
+              "pcategory": "Cheese",
+              "purl": "../assets/amul cheese slices.jpeg",
+              "netWeight": "100g" 
+            },
+            {
+              "id": 9,
+              "pname": "Amul Butter Pasteurized",
+              "pdescription": "Made from fresh cream, perfect for spreading and cooking",
+              "pcost": "120 rs",
+              "pcategory": "Butter",
+              "purl": "../assets/amul butter pasteurized.jpeg",
+              "netWeight": "250g"
+            },
+            {
+              "id": 10,
+              "pname": "Akshayakalpa Cow Milk",
+              "pdescription": "Fresh and healthy cow milk from organic farms",
+              "pcost": "55 rs",
+              "pcategory": "Milk",
+              "purl": "../assets/akshayakalpa cow milk.jpeg",
+              "netWeight": "500ml"
+            },
+            {
+              "id":11,
+              "pname": "Amul Toned Milk",
+              "pdescription": "Homogenised toned milk, ideal for everyday consumption",
+              "pcost": "35 rs",
+              "pcategory": "Milk",
+              "purl": "../assets/amul toned milk.jpeg",
+              "netWeight":"1L"
+              
+            },
+            {
+                "id": 12,
+                "pname": "Amul Cheese Cubes",
+                "pdescription": "Delicious cheese cubes in a convenient pack, perfect for snacking",
+                "pcost": "80 rs",
+                "pcategory": "Cheese",
+                "purl": "../assets/amul cheese cubes.jpeg",
+                "netWeight":"150g"
+            }
+        
+          
+    ]
+} 

@@ -1,0 +1,26 @@
+{
+  "Orders": [
+    {
+      "customerName": "kevin",
+      "customerNo": 8785454545,
+      "customerAddress": "kasjdjasdknjaksdasndjksd",
+      "orderQuantity": 2,
+      "customerEmail": "jkk@fdfds.com",
+      "orderedItem": "Amul Butter Pasteurized",
+      "orderedItemCost": "120 rs",
+      "orderurl": "../assets/amul butter pasteurized.jpeg",
+      "id": 4
+    },
+    {
+      "customerName": "kjhjkn",
+      "customerNo": 9845455552,
+      "customerAddress": "asdsadasdasdasdsadsadd",
+      "orderQuantity": 5,
+      "customerEmail": "avc@gmail.com",
+      "orderedItem": "Nestle Milk Powder",
+      "orderedItemCost": "60 rs",
+      "orderurl": "../assets/nestle milk powder.jpeg",
+      "id": 8
+    }
+  ]
+}
