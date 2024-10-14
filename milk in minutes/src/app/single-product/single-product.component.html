@@ -1,0 +1,66 @@
+<div class="card-container">
+
+  <mat-card class="card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{product.pname}}</mat-card-title>
+        <mat-card-subtitle>{{product.pcategory}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src={{product.purl}} alt="{{product.pname}}">
+      <mat-card-content>
+        <ul>
+          <li><p>Product Description : {{product.pdescription}}</p></li>
+          <li><p>Product Cost : <b>{{product.pcost}}</b></p></li>
+          <li><p>Product Net Weight : <b>{{product.netWeight}}</b></p> </li>
+        </ul>
+      </mat-card-content>
+      <mat-card-actions>
+      </mat-card-actions>
+    </mat-card>
+
+  <div>  
+    <form class="form"  [formGroup]="orderform" (ngSubmit)="onSubmit()" >
+            <h1><i>Order Now !!!</i></h1>
+            <mat-form-field appearance="fill">
+                <mat-label>Name</mat-label>
+                <input  matInput type="text" id="Name" formControlName="Name"  [(ngModel)]="order.customerName">
+                <mat-error *ngIf="orderform.get('Name')?.hasError('required') && orderform.get('Name')?.touched">Name is required</mat-error>
+                <mat-error class="mat-error" *ngIf="orderform.get('Name')?.hasError('minlength') && orderform.get('Name')?.touched">Minimum required length is 3</mat-error>
+              </mat-form-field><br>
+
+            <mat-form-field appearance="fill">
+              <mat-label>Mobile No</mat-label>
+                <input matInput  type="number" id="Mno" formControlName="Mno" [(ngModel)]="order.customerNo" >
+
+                <mat-error *ngIf="orderform.get('Mno')?.hasError('required') && orderform.get('Mno')?.touched">Mobile No is required</mat-error>
+                <mat-error *ngIf="orderform.get('Mno')?.hasError('pattern') && orderform.get('Mno')?.touched">number Must be 10 digits and begin with 9,8,7 </mat-error>
+
+            </mat-form-field><br><br>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Address</mat-label>
+                <textarea matInput id="address" formControlName="address" cols="15" rows="5" [(ngModel)]="order.customerAddress"></textarea>
+                <mat-error *ngIf="orderform.get('address')?.hasError('required') && orderform.get('address')?.touched">Address is required</mat-error>
+                
+            </mat-form-field><br>
+
+            <mat-form-field appearance="fill">
+              <mat-label>Quantity</mat-label>
+                <input matInput type="number" id="quantity" formControlName="quantity" [(ngModel)]="order.orderQuantity">
+                <mat-error *ngIf="orderform.get('quantity')?.hasError('required') && orderform.get('quantity')?.touched">Quantity is required</mat-error>
+                <mat-error *ngIf="orderform.get('quantity')?.hasError('max') && orderform.get('quantity')?.touched">Can't order more than 10 units</mat-error>
+
+            </mat-form-field><br>
+
+            <mat-form-field appearance="fill">
+              <mat-label>Email</mat-label>
+                <input matInput type="text" name="email" id="email" formControlName="email" [(ngModel)]="order.customerEmail" >
+              <mat-error *ngIf="orderform.controls['email'].hasError('minlength')">incorrect email</mat-error>
+                <mat-error *ngIf=" orderform.get('email')?.touched && orderform.get('email')?.hasError('pattern')">Please enter a valid Email Id </mat-error>
+                <mat-error *ngIf="orderform.get('email')?.touched && orderform.get('email')?.hasError('required')">Email is required</mat-error>
+            </mat-form-field><br>
+          <button [disabled]="orderform.invalid" color="primary" mat-raised-button type="submit">Buy</button>
+        
+    </form>
+  </div>
+</div>
